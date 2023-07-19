@@ -1,0 +1,146 @@
+:root {
+    --bg-1: #212529;
+    --bg-2: #221f1f;
+    --color: #fff;
+
+    --bg-hover-switch: #f2f2f2;
+    --light-2: #fff;
+    --color-hover-switch: #000;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-1);
+}
+
+.container {
+    background-color: var(--bg-2);
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+    margin: 3rem auto;
+    max-width: 34rem;
+    padding: 1.6rem;
+    color: var(--color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: var(--color);
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.title:hover {
+    color: #38993b;
+    transform: scale(1.05);
+}
+
+.switch-theme-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.switchThemeBtn {
+    background-color: transparent;
+    color: var(--color);
+    border: 1px solid var(--color);
+    padding: 0.5em 0.9rem;
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition: all .6s;
+}
+
+.switchThemeBtn:hover {
+    background-color: var(--bg-hover-switch);
+    color: var(--color-hover-switch);
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+input, select {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 0.8rem;
+    width: 100%;
+    margin-bottom: 1.4rem;
+}
+
+input:focus, select:focus {
+    outline: none;
+}
+
+.btn {
+    background-color: #38993b;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.btn:hover {
+    background-color: #3b793e;
+}
+
+.calculateTipBtn {
+    width: 100%;
+}
+
+input:disabled {
+    background-color: #d8d5d5;
+    color: #5a5a5a;
+}
+
+.input-button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-button-group .btn {
+    padding: 0.8rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-bottom: 1.4rem;
+}
+
+.displayNone {
+    display: none;
+}
+
+.borderRightZero {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.border-red {
+    border: 2px solid red;
+}
+
+.border-green {
+    border: 2px solid #38993b;
+}
+
+.copied {
+    background-color: #205522;
+    color: #ccc;
+}
